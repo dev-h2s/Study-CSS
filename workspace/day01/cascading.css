@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* 구체화시켜서 적용, background-color은 설정값에 없어서 기존것 사용 */
+html body p.fruit{
+    color: pink;
+}
+/* 내부 스타일 시트인 html 에 작성된 background-color 우선 */
+/* important는 가장 강한 우선순위, 내부에서도 important를 쓰면 내부스타일 우위 */
+.fruit {
+    background-color: black !important;
+}
